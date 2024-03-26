@@ -42,7 +42,7 @@ const DashboardsMenu = () => {
           Employees
         </button>
       </div>
-      {renderContent()}
+      <div>{renderContent()}</div>
     </div>
   );
 };
