@@ -35,18 +35,18 @@ const Overview = () => {
           {/* bottom-stuff-right */}
           <div className=" left-1 mx-4 ">
             IN PROGRESS
-            <div className="mx-2 border-2 border-gray-600 rounded-lg bg-red-500 overflow-visible px-4 py-2  my-1 ">
+            <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red overflow-visible px-4 py-2  my-1 ">
               Document Verification
             </div>
             <div className="">
-              <div className="mx-2 border-2 border-gray-600 rounded-lg bg-red-500 px-6 py-2 my-1 ">
+              <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red px-6 py-2 my-1 ">
                 KYC Check
               </div>
-              <div className="mx-2 border-2 border-gray-600 rounded-lg bg-red-500 px-6 py-2 my-1 ">
+              <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red px-6 py-2 my-1 ">
                 AML Check
               </div>
             </div>
-            <div className="mx-2 border-2 border-gray-600 rounded-lg bg-red-500 px-4 py-2 my-1 ">
+            <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red px-4 py-2 my-1 ">
               Selfie Check
             </div>
           </div>
