@@ -27,13 +27,13 @@ const DashboardsMenu = () => {
   };
 
   return (
-    <div className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-slate-950 rounded-xl m-3 px-3 py-5 flex justify-center items-center font-arial">
+    <div className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black rounded-xl m-3  py-5 flex justify-center items-center font-arial">
       <p className="text-3xl text-white absolute top-3 left-11">Lender Admin</p>
-      <button className=" flex items-center text-sm absolute top-3 right-4 bg-custom-red rounded-md px-4 py-2">
+      <button className=" flex items-center text-sm absolute top-3 right-11 bg-custom-red rounded-md px-4 py-2">
         <PlusIcon className="mr-2" />
         <div>Invite Employee</div>
       </button>
-      <div className="absolute flex my-12 mx-7 p-2 top-3 left-3 text-white">
+      <div className="absolute flex my-16 mx-7 p-2 top-3 left-1 text-white">
         <button
           className={`px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-300  ${
             activeSection === "dashboard" ? "custom-purple" : ""
@@ -74,22 +74,21 @@ const DashboardsMenu = () => {
         </button>
       </div>
       {activeSection === "employee" ? (
-        <div className="absolute flex my-12 mx-7 p-2 top-3 right-3 text-white">
+        <div className="absolute flex my-16 mx-0 p-2 top-3 right-7 text-sm text-white">
           <div className="px-4 mx-1 py-1 text-sm flex justify-center items-center rounded-md bg-slate-800">
             <div className="px-1">
               <TrashIcon />
             </div>
             <div>Reset User Password</div>
           </div>
-          <div className="px-8 mx-1 py-1 rounded-md bg-slate-800 text-gray-500 text-md flex justify-center items-start">
+          <div className="px-8 mx-1 py-1 rounded-md bg-slate-800 text-gray-500 text-md flex justify-between items-start">
             <input placeholder="Search" className="bg-transparent" />
-            <SearchIcon />
+            <SearchIcon className="mt-1 " />
           </div>
         </div>
       ) : (
         "null"
-      )
-      }
+      )}
       <div>{renderContent()}</div>
     </div>
   );

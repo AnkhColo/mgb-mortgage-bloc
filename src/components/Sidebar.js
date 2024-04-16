@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { ReactComponent as HomeIcon } from "../icons/home.svg";
-import { ReactComponent as MenuIcon } from "../icons/layout-dashboard.svg";
+import { ReactComponent as MenuIcon } from "../icons/dash-menu.svg";
 import { ReactComponent as LogoutIcon } from "../icons/upload.svg";
-import { ReactComponent as EmIcon } from "../icons/vector.svg";
+import { ReactComponent as EmIcon } from "../icons/users.svg";
 
 const Sidebar = () => {
   return (
