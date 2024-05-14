@@ -14,18 +14,20 @@ const Sidebar = () => {
       </div>
       <div
         className="fixed top-0 left-0 w-16 m-0 h-screen p-1
-    flex flex-col bg-black text-secondary shadow-lg"
+    flex flex-col bg-rgba(9, 8, 8, 0.978) text-secondary shadow-lg"
       >
-        <SidebarIcon icon={<HomeIcon size={30} />} />
+        <SidebarIcon icon={<HomeIcon size={30} />}  />
         <Link to="/">
-          <SidebarIcon icon={<MenuIcon size={30} />} />
+          <SidebarIcon icon={<MenuIcon className="my-2" size={30} />} />
         </Link>
         <Link to="/employees">
-          <SidebarIcon icon={<EmIcon size={30} />} />
+          <SidebarIcon icon={<EmIcon className="my-2" size={30} />} />
         </Link>
       </div>
       <div className="fixed bottom-3 left-0 mx-auto px-4 my-2 text-gray-600 font-arial text-xs ">
-        <SidebarIcon icon={<LogoutIcon size={22} text={"Logout"} />} />
+        <SidebarIcon
+          icon={<LogoutIcon className="my-2" size={22} text={"Logout"} />}
+        />
         <p className="">Log Out</p>
       </div>
     </>

@@ -35,7 +35,7 @@ const DashboardsMenu = () => {
       </button>
       <div className="absolute flex my-16 mx-7 p-2 top-3 left-1 text-white">
         <button
-          className={`px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-300  ${
+          className={`px-10 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-300  ${
             activeSection === "dashboard" ? "custom-purple" : ""
           }`}
           onClick={() => handleButtonClick("dashboard")}
@@ -54,7 +54,7 @@ const DashboardsMenu = () => {
           </div>
         </button>
         <button
-          className={`px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-300  ${
+          className={`px-10 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-300  ${
             activeSection === "employee" ? "custom-purple" : ""
           }`}
           onClick={() => handleButtonClick("employee")}
@@ -75,13 +75,13 @@ const DashboardsMenu = () => {
       </div>
       {activeSection === "employee" ? (
         <div className="absolute flex my-16 mx-0 p-2 top-3 right-7 text-sm text-white">
-          <div className="px-4 mx-1 py-1 text-sm flex justify-center items-center rounded-md bg-slate-800">
+          <div className="px-4 mx-1 py-2 text-sm flex justify-center items-center rounded-md bg-slate-800">
             <div className="px-1">
               <TrashIcon />
             </div>
             <div>Reset User Password</div>
           </div>
-          <div className="px-8 mx-1 py-1 rounded-md bg-slate-800 text-gray-500 text-md flex justify-between items-start">
+          <div className="px-8 mx-1 py-2 rounded-md bg-slate-800 text-gray-500 text-md flex justify-between items-start">
             <input placeholder="Search" className="bg-transparent" />
             <SearchIcon className="mt-1 " />
           </div>

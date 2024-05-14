@@ -39,7 +39,7 @@ export default function EmployeesMenu() {
   };
 
   return (
-    <div className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black rounded-xl m-3 px-3 py-5 flex justify-center items-center font-arial object-cover">
+    <div className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black rounded-xl m-3  flex justify-center items-center font-arial object-cover">
       <div
         className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-gray-950 rounded-xl 
       m-3 px-3 py-5 flex justify-center items-center font-arial text-white"
@@ -56,62 +56,62 @@ export default function EmployeesMenu() {
           <DownIcon className="mr-2" />
           <div>Download</div>
         </button>
-        <div className="absolute flex my-12 mx-4 py-2  top-3 left-0">
-          {/* Buttons for section switching */}
 
+        {/* Buttons for section switching */}
+        <div className="absolute flex my-12   top-3 left-0">
           {/* Overview Button */}
-          <div className="flex">
-            <OverviewIcon />
+          <overview className="flex">
             <button
-              className={`px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-500  ${
+              className={` flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
                 activeSection === "overview" ? "custom-purple text-black" : ""
               }`}
               onClick={() => handleButtonClick("overview")}
             >
-              Overview
+              <OverviewIcon className="mr-4" />
+              <div>Overview</div>
             </button>
-          </div>
+          </overview>
 
           {/* Charts Button */}
-          <div className="flex ">
+          <charts className="flex ">
             <button
-              className={`flex px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-500  ${
+              className={`flex items-center px-8  py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
                 activeSection === "charts" ? "custom-purple text-black" : ""
               }`}
               onClick={() => handleButtonClick("charts")}
             >
               <div>
-                <ChartsIcon className="mx-3" />
+                <ChartsIcon className="mr-4" />
               </div>
               <div>Charts</div>
             </button>
-          </div>
+          </charts>
 
           {/* Credit Data Button */}
-          <div>
-            <CreditDataIcon />
+          <creditdata>
             <button
-              className={`px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-500 ${
+              className={`flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500 ${
                 activeSection === "creditData" ? "custom-purple text-black" : ""
               }`}
               onClick={() => handleButtonClick("creditData")}
             >
-              Credit Data
+              <CreditDataIcon className="mr-4" />
+              <div>Credit Data</div>
             </button>
-          </div>
+          </creditdata>
 
           {/* Transactions Button */}
           <transactions>
-            <TransactionsIcon />
             <button
-              className={`px-10 mx-1 py-1 rounded-md bg-slate-800 hover:bg-purple-500  ${
+              className={`flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
                 activeSection === "transactions"
                   ? "custom-purple text-black"
                   : ""
               }`}
               onClick={() => handleButtonClick("transactions")}
             >
-              Transactions
+              <TransactionsIcon className="mr-4" />
+              <div>Transactions</div>
             </button>
           </transactions>
         </div>

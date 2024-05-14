@@ -1,10 +1,11 @@
 import React from "react";
+import { ReactComponent as CheckIcon } from "../icons/check.svg";
 
 const Overview = () => {
   return (
     <div>
-      <div className="absolute top-[18%] flex flex-col rounded-md bg-gray-900 text-white w-[47%]  px-[100px] py-[255px] mr-2 ml-4 left-0">
-        <div className="absolute top-4 left-1 flex text-sm">
+      <div className="absolute top-[18%] flex flex-col rounded-md bg-gray-900 text-white w-[48%]  pr-[100px]  py-[255px] mr-2 ml-1 left-0">
+        <div className="absolute top-4 left-0 flex text-sm">
           <div className="mx-2 border-2 border-gray-600 rounded-lg bg-transparent px-6 py-2 ">
             1 Nov, 1996
           </div>
@@ -21,14 +22,23 @@ const Overview = () => {
           {/* bottom-stuff-left */}
           <div className=" right-1 mx-4 ">
             DONE
-            <div className="mx-2 border-2 border-blue-600 rounded-lg bg-transparent px-6  my-1 ">
-              Bank Account Name Match
+            <div className="flex mx-2 border-2 border-blue-600 rounded-lg bg-transparent px-6 py-1  my-4 ">
+              <div className="mx-1">
+                <CheckIcon />
+              </div>
+              <div>Bank Account Name Match</div>
             </div>
-            <div className="mx-2 border-2 border-blue-600 rounded-lg bg-transparent px-6  my-1 ">
-              Bank Account Connected
+            <div className="flex mx-2 border-2 border-blue-600 rounded-lg bg-transparent px-6 py-1  my-4 ">
+              <div className="mx-1">
+                <CheckIcon />
+              </div>
+              <div>Bank Account Connected</div>
             </div>
-            <div className="mx-2 border-2 border-blue-600 rounded-lg bg-transparent px-6  my-1 ">
-              Data Categorised
+            <div className="flex mr-24 ml-2 border-2 border-blue-600 rounded-lg bg-transparent px-4 py-1  my-4 ">
+              <div className="mx-1">
+                <CheckIcon />
+              </div>
+              <div>Data Categorised</div>
             </div>
           </div>
 
@@ -38,11 +48,11 @@ const Overview = () => {
             <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red overflow-visible px-4 py-2  my-1 ">
               Document Verification
             </div>
-            <div className="">
-              <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red px-6 py-2 my-1 ">
+            <div className="flex">
+              <div className="mx-0 border-2 border-gray-600 rounded-lg bg-custom-red px-2 py-2 my-1 ">
                 KYC Check
               </div>
-              <div className="mx-2 border-2 border-gray-600 rounded-lg bg-custom-red px-6 py-2 my-1 ">
+              <div className="mx-0 border-2 border-gray-600 rounded-lg bg-custom-red px-2 py-2 my-1 ">
                 AML Check
               </div>
             </div>
@@ -72,7 +82,7 @@ const Overview = () => {
 function Section({ title, value }) {
   return (
     <>
-      <div className="relative rounded-md my-1 bg-slate-800 w-[570px]  h-[89px]">
+      <div className="relative rounded-md mb-2 ml-1 bg-slate-800 w-[570px]  h-[95px]">
         <div className="absolute top-2 left-2 text-blue-600">{title}</div>
         <div className="text-7xl absolute right-2 top-2 ">{value}</div>
       </div>

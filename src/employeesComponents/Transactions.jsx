@@ -12,7 +12,10 @@ const Transactions = () => {
     <div>
       <div className="text-white">
         <div className="absolute top-[18%] left-[50px] rounded-t-md  my-1 bg-slate-800 w-[1000px]  h-[10px] ">
-          <div className="flex items-center my-2 bg-slate-800 text-gray-600  ">
+          <div
+            className="flex items-center my-2 bg-slate-800 text-gray-600  
+          justify-evenly  rounded-md   w-[1000px]  h-[20px]"
+          >
             <div className="mx-6 px-4">Name</div>
             <div className="mx-6 px-4">Date</div>
             <div className="mx-6 px-4">Reccuring</div>
@@ -103,7 +106,7 @@ const TransactionsInfo = ({
 }) => {
   return (
     <>
-      <div className="flex justify-center items-center rounded-md my-1 bg-slate-800 w-[1000px]  h-[59px]  ">
+      <div className="flex justify-evenly items-center rounded-md my-1 bg-slate-800 w-[1000px]  h-[59px]  ">
         <input type="checkbox"></input>
         <div className="mx-2 px-4">{name}</div>
         <div className="mx-2 px-4">{date}</div>

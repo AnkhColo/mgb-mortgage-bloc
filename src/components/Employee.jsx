@@ -10,8 +10,8 @@ const Employee = () => {
   const [applicants, setApplicants] = useState("Applicant47");
   return (
     <>
-      <div className="absolute text-white top-[24%] left-11 rounded-t-md  mt-1 bg-custom-dark-gray w-[92.5%]  h-[72%] overflow-y-scroll scroll-smooth ">
-        <div className="flex items-center  my-1 bg-custom-dark-gray text-gray-600 text-sm ">
+      <div>
+        <div className="flex absolute items-center  my-8 bg-custom-dark-gray text-gray-600 text-sm  ">
           <div className=" relative bg-transparent h-2 w-2 p-2 border-[1px] ml-4 border-gray-500 rounded-md  " />
           <div className="ml-12">First Name</div>
           <div className="ml-10">Last Name</div>
@@ -23,7 +23,33 @@ const Employee = () => {
             <DotIcon />
           </div>
         </div>
+      </div>
+      <div className="absolute text-white top-[24%] left-11 rounded-t-md  mt-1 bg-custom-dark-gray w-[92.5%]  h-[72%] overflow-y-scroll scroll-smooth  ">
         <div className="">
+          <EmployeeInfo
+            firstName={firstName}
+            lastName={lastName}
+            date={date}
+            email={email}
+            lender={lender}
+            applicants={applicants}
+          />
+          <EmployeeInfo
+            firstName={firstName}
+            lastName={lastName}
+            date={date}
+            email={email}
+            lender={lender}
+            applicants={applicants}
+          />
+          <EmployeeInfo
+            firstName={firstName}
+            lastName={lastName}
+            date={date}
+            email={email}
+            lender={lender}
+            applicants={applicants}
+          />
           <EmployeeInfo
             firstName={firstName}
             lastName={lastName}
