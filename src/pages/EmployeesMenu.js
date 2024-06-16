@@ -39,7 +39,10 @@ export default function EmployeesMenu() {
   };
 
   return (
-    <div className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black rounded-xl m-3  flex justify-center items-center font-arial object-cover">
+    <div
+      className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black 
+    rounded-xl m-3  flex justify-center items-center font-arial object-cover"
+    >
       <div
         className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-gray-950 rounded-xl 
       m-3 px-3 py-5 flex justify-center items-center font-arial text-white"

@@ -10,21 +10,20 @@ const Employee = () => {
   const [applicants, setApplicants] = useState("Applicant47");
   return (
     <>
-      <div>
-        <div className="flex absolute items-center  my-8 bg-custom-dark-gray text-gray-600 text-sm  ">
-          <div className=" relative bg-transparent h-2 w-2 p-2 border-[1px] ml-4 border-gray-500 rounded-md  " />
-          <div className="ml-12">First Name</div>
-          <div className="ml-10">Last Name</div>
-          <div className="ml-16">Date</div>
-          <div className="ml-32">Email</div>
-          <div className="ml-52">Lender</div>
-          <div className="ml-24">Applicants</div>
-          <div className="ml-4">
-            <DotIcon />
-          </div>
+      <div className="flex absolute top-[18%] left-[50px] my-8 bg-custom-dark-gray text-gray-600 text-sm p-2 rounded-md ">
+        <div className="  bg-transparent h-2 w-2 p-2 border-[1px] ml-4 border-gray-500 rounded-md  " />
+        <div className="ml-12">First Name</div>
+        <div className="ml-10">Last Name</div>
+        <div className="ml-16">Date</div>
+        <div className="ml-32">Email</div>
+        <div className="ml-52">Lender</div>
+        <div className="ml-24">Applicants</div>
+        <div className="ml-20">
+          <DotIcon />
         </div>
       </div>
-      <div className="absolute text-white top-[24%] left-11 rounded-t-md  mt-1 bg-custom-dark-gray w-[92.5%]  h-[72%] overflow-y-scroll scroll-smooth  ">
+
+      <div className="absolute text-white top-[30%] left-11 rounded-t-md  mt-1 bg-custom-dark-gray w-[92.5%]  h-[72%]  overflow-y-scroll scroll-smooth ">
         <div className="">
           <EmployeeInfo
             firstName={firstName}

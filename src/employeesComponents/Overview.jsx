@@ -4,7 +4,10 @@ import { ReactComponent as CheckIcon } from "../icons/check.svg";
 const Overview = () => {
   return (
     <div>
-      <div className="absolute top-[18%] flex flex-col rounded-md bg-gray-900 text-white w-[48%]  pr-[100px]  py-[255px] mr-2 ml-1 left-0">
+      <div
+        className="absolute top-[18%] flex flex-col rounded-md bg-gray-900 text-white w-[48%]  
+      pr-[100px]  py-[255px] mr-2 ml-1 left-0"
+      >
         <div className="absolute top-4 left-0 flex text-sm">
           <div className="mx-2 border-2 border-gray-600 rounded-lg bg-transparent px-6 py-2 ">
             1 Nov, 1996
@@ -64,7 +67,7 @@ const Overview = () => {
       </div>
 
       {/* Section 2 - Grid elements RIGHT */}
-      <div className="w-full grid grid-flow-col grid-cols-3 px-4">
+      <div className="w-full grid grid-flow-col grid-cols-3 px-4 object-cover">
         <div className="absolute top-[18%] rounded-md  text-white w-[49%] px-[70px] py-[240px] mr-2 ml-2 right-2">
           <div className="absolute top-0 left-0  flex flex-col ">
             <Section title={"Number of Connected Bank Accounts"} value={2} />
