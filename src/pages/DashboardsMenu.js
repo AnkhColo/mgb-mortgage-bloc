@@ -1,8 +1,8 @@
 import { ReactComponent as PlusIcon } from "../icons/plus-circle.svg";
 import { ReactComponent as PersonIcon } from "../icons/person-standing.svg";
 import { ReactComponent as DashIcon } from "../icons/layout-grid.svg";
-import { ReactComponent as TrashIcon } from "../icons/trash.svg";
-import { ReactComponent as SearchIcon } from "../icons/search.svg";
+// import { ReactComponent as TrashIcon } from "../icons/trash.svg";
+// import { ReactComponent as SearchIcon } from ".../icons/search.svg";
 
 import React, { useState } from "react";
 import Employee from "../components/Employee";
@@ -76,14 +76,12 @@ const DashboardsMenu = () => {
       {activeSection === "employee" ? (
         <div className="absolute flex my-16 mx-0 p-2 top-3 right-7 text-sm text-white">
           <div className="px-4 mx-1 py-2 text-sm flex justify-center items-center rounded-md bg-slate-800">
-            <div className="px-1">
-              <TrashIcon />
-            </div>
+            <div className="px-1">{/* <TrashIcon /> */}</div>
             <div>Reset User Password</div>
           </div>
           <div className="px-8 mx-1 py-2 rounded-md bg-slate-800 text-gray-500 text-md flex justify-between items-start">
             <input placeholder="Search" className="bg-transparent" />
-            <SearchIcon className="mt-1 " />
+            {/* <SearchIcon className="mt-1 " /> */}
           </div>
         </div>
       ) : (

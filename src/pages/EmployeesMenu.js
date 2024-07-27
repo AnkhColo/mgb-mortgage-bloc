@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { ReactComponent as DownIcon } from "../icons/arrow-down.svg";
 import { ReactComponent as ReturnIcon } from "../icons/header-return.svg";
-import { ReactComponent as InvatedIcon } from "../icons/invated.svg";
-import { ReactComponent as OverviewIcon } from "../icons/overview.svg";
-import { ReactComponent as ChartsIcon } from "../icons/charts.svg";
-import { ReactComponent as CreditDataIcon } from "../icons/credit-data.svg";
-import { ReactComponent as TransactionsIcon } from "../icons/transactions.svg";
-import { ReactComponent as LocationIcon } from "../icons/location.svg";
-import { ReactComponent as CalendarIcon } from "../icons/calendar.svg";
-import { ReactComponent as TickIcon } from "../icons/tick.svg";
-import { ReactComponent as ComingSoonIcon } from "../icons/coming-soon.svg";
+// import { ReactComponent as InvatedIcon } from "../icons/invated.svg";
+// import { ReactComponent as OverviewIcon } from "../icons/overview.svg";
+// import { ReactComponent as ChartsIcon } from "../icons/charts.svg";
+// import { ReactComponent as CreditDataIcon } from "../icons/credit-data.svg";
+// import { ReactComponent as TransactionsIcon } from "../icons/transactions.svg";
+// import { ReactComponent as LocationIcon } from "../icons/location.svg";
+// import { ReactComponent as CalendarIcon } from "../icons/calendar.svg";
+// import { ReactComponent as TickIcon } from "../icons/tick.svg";
+// import { ReactComponent as ComingSoonIcon } from "../icons/coming-soon.svg";
 
 import Overview from "../employeesComponents/Overview";
 import Charts from "../employeesComponents/Charts";
@@ -53,7 +53,7 @@ export default function EmployeesMenu() {
             <ReturnIcon className="mx-3" />
           </button>
           <p className=" text-white text-4xl ">Vladmir Isadev</p>
-          <InvatedIcon className="mx-3" />
+          {/* <InvatedIcon className="mx-3" /> */}
         </div>
         <button className=" flex items-center text-sm absolute top-3 right-4 bg-custom-red text-black rounded-md px-4 py-2">
           <DownIcon className="mr-2" />
@@ -70,7 +70,7 @@ export default function EmployeesMenu() {
               }`}
               onClick={() => handleButtonClick("overview")}
             >
-              <OverviewIcon className="mr-4" />
+              {/* <OverviewIcon className="mr-4" /> */}
               <div>Overview</div>
             </button>
           </overview>
@@ -83,9 +83,7 @@ export default function EmployeesMenu() {
               }`}
               onClick={() => handleButtonClick("charts")}
             >
-              <div>
-                <ChartsIcon className="mr-4" />
-              </div>
+              <div>{/* <ChartsIcon className="mr-4" /> */}</div>
               <div>Charts</div>
             </button>
           </charts>
@@ -98,7 +96,7 @@ export default function EmployeesMenu() {
               }`}
               onClick={() => handleButtonClick("creditData")}
             >
-              <CreditDataIcon className="mr-4" />
+              {/* <CreditDataIcon className="mr-4" /> */}
               <div>Credit Data</div>
             </button>
           </creditdata>
@@ -113,7 +111,7 @@ export default function EmployeesMenu() {
               }`}
               onClick={() => handleButtonClick("transactions")}
             >
-              <TransactionsIcon className="mr-4" />
+              {/* <TransactionsIcon className="mr-4" /> */}
               <div>Transactions</div>
             </button>
           </transactions>

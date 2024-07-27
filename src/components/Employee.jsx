@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as DotIcon } from "../icons/dotdotdot.svg";
+import { ReactComponent as DotIcon } from "../icons/chevron-left-dot.svg";
 
 const Employee = () => {
   const [firstName, setFirstName] = useState("Colin");
