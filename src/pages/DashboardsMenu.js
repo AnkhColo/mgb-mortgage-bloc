@@ -1,6 +1,7 @@
 import { ReactComponent as PlusIcon } from "../icons/plus-circle.svg";
 import { ReactComponent as PersonIcon } from "../icons/person-standing.svg";
 import { ReactComponent as DashIcon } from "../icons/layout-grid.svg";
+// import { ReactComponent as DashIconHover } from "../icons/dash-hover.svg";
 // import { ReactComponent as TrashIcon } from "../icons/trash.svg";
 // import { ReactComponent as SearchIcon } from ".../icons/search.svg";
 
@@ -27,7 +28,7 @@ const DashboardsMenu = () => {
   };
 
   return (
-    <div className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black rounded-xl m-3  py-5 flex justify-center items-center font-arial">
+    <div className=" fixed top-[-1] bottom-1 left-14 right-1 max-w-[1496px] max-h-[880px] bg-[rgba(255, 255, 255, 0.02)] rounded-xl m-3  py-5 flex justify-center items-center font-arial">
       <p className="text-3xl text-white absolute top-3 left-11">Lender Admin</p>
       <button className=" flex items-center text-sm absolute top-3 right-11 bg-custom-red rounded-md px-4 py-2">
         <PlusIcon className="mr-2" />
@@ -41,7 +42,7 @@ const DashboardsMenu = () => {
           onClick={() => handleButtonClick("dashboard")}
         >
           <div className="flex justify-center items-center">
-            <div className="px-1">
+            <div className="px-1 ">
               <DashIcon size={2} />
             </div>
             <div
@@ -64,7 +65,7 @@ const DashboardsMenu = () => {
               <PersonIcon />
             </div>
             <div
-              className={`px-1 ${
+              className={`px-1  ${
                 activeSection === "employee" ? "text-black" : "text-white"
               } `}
             >

@@ -13,11 +13,16 @@ function App() {
   return (
     <BrowserRouter>
       <AuthContextProvider>
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<DashboardsMenu />} />
-          <Route path="employees/*" element={<EmployeesMenu />} />
-        </Routes>
+        <div
+          className="bg:[rgba(11, 12, 18, 1)];
+"
+        >
+          <Sidebar />
+          <Routes>
+            <Route path="/" element={<DashboardsMenu />} />
+            <Route path="employees/*" element={<EmployeesMenu />} />
+          </Routes>
+        </div>
       </AuthContextProvider>
     </BrowserRouter>
   );

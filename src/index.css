@@ -13,8 +13,8 @@
 
 @layer components {
   .sidebar-icon{
-    @apply relative flex justify-center items-center w-12 
-    h-10 mx-auto  shadow-lg bg-black p-3
+    @apply relative flex justify-center items-center w-[48px]
+    h-[40px] mx-auto  shadow-lg bg-black p-3
     text-gray-500 hover:bg-gray-300 hover:text-black
     rounded-md transition-all duration-300 ease-linear
   }

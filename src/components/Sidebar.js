@@ -8,13 +8,16 @@ import { ReactComponent as EmIcon } from "../icons/users.svg";
 
 const Sidebar = () => {
   return (
-    <>
+    <div
+      className="background: [rgba(11, 12, 18, 1)];
+"
+    >
       <div className="fixed top-3 right-12 text-gray-500 text-sm">
         muriithicolin98@gmail...ˇ
       </div>
       <div
-        className="fixed top-0 left-0 w-16  h-screen p-1
-    flex flex-col bg-rgba(9, 8, 8, 0.978) text-secondary shadow-lg"
+        className="fixed top-0 left-0 w-[96px]  h-screen p-1
+    flex flex-col  text-secondary shadow-lg "
       >
         <div className="my-2">
           <SidebarIcon icon={<HomeIcon size={30} />} />
@@ -22,7 +25,7 @@ const Sidebar = () => {
         <div className="my-6">
           <div className="my-2">
             <Link to="/">
-              <SidebarIcon icon={<MenuIcon className="my-2" size={30} />} />
+              <SidebarIcon icon={<MenuIcon className="my-2 " size={30} />} />
             </Link>
           </div>
           <Link to="/employees">
@@ -36,7 +39,7 @@ const Sidebar = () => {
         />
         <p className="">Log Out</p>
       </div>
-    </>
+    </div>
   );
 };
 
