@@ -8,13 +8,10 @@ import { ReactComponent as EmIcon } from "../icons/users.svg";
 
 const Sidebar = () => {
   return (
-    <div
-      className="background: [rgba(11, 12, 18, 1)];
-"
-    >
-      <div className="fixed top-3 right-12 text-gray-500 text-sm">
+    <div className="bg-[rgba(11, 12, 18, 1)]">
+      {/* <div className="fixed top-3 right-12 text-gray-500 text-sm">
         muriithicolin98@gmail...ˇ
-      </div>
+      </div> */}
       <div
         className="fixed top-0 left-0 w-[96px]  h-screen p-1
     flex flex-col  text-secondary shadow-lg "

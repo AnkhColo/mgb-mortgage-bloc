@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [completedApp, setCompletedApp] = useState(0);
 
   return (
-    <div className="w-[1100px] h-[568px] grid grid-flow-col grid-cols-3 ">
+    <div className="absolute w-[1280px] h-[528px] top-[184px] left-[48px] mx-auto grid grid-flow-col grid-cols-3 gap-2 ">
       <Board title={"Transactions"} value={transactions} />
       <Board title={"Applicants Pending"} value={pendingApp} />
       <Board title={"Applicants Completed"} value={completedApp} />
@@ -19,7 +19,7 @@ export default Dashboard;
 const Board = ({ title, value }) => {
   return (
     <div
-      className="relative top-[10%] rounded-md text-custom-purple  hover:text-white  bg-transparent border-gray-800 
+      className="relative  rounded-md text-custom-purple  hover:text-white  bg-transparent border-gray-800 
     border-2 hover:bg-gradient-to-tr from-custom-purple    p-6  mr-2"
     >
       <div className="absolute top-2 text-sm left-2">{title}</div>
