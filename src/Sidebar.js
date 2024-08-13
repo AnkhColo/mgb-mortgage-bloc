@@ -1,20 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { ReactComponent as HomeIcon } from "../icons/home.svg";
-import { ReactComponent as MenuIcon } from "../icons/dash-menu.svg";
-import { ReactComponent as LogoutIcon } from "../icons/upload.svg";
-import { ReactComponent as EmIcon } from "../icons/users.svg";
+import { ReactComponent as HomeIcon } from "./icons/home.svg";
+import { ReactComponent as MenuIcon } from "./icons/dash-menu.svg";
+import { ReactComponent as LogoutIcon } from "./icons/upload.svg";
+import { ReactComponent as EmIcon } from "./icons/users.svg";
+import { ReactComponent as DownIcon } from "./icons/chevron-down.svg";
 
 const Sidebar = () => {
   return (
-    <div className="bg-[rgba(11, 12, 18, 1)]">
-      {/* <div className="fixed top-3 right-12 text-gray-500 text-sm">
-        muriithicolin98@gmail...ˇ
-      </div> */}
+    <div>
+      <div className="fixed max-w-[96px]  w-full flex  top-3 right-32 text-gray-500 text-sm">
+        <div className="mr-[8px]">muriithicolin98@gmail.com...</div>
+        <div>
+          <DownIcon />
+        </div>
+      </div>
       <div
-        className="fixed top-0 left-0 w-[96px]  h-screen p-1
-    flex flex-col  text-secondary shadow-lg "
+        className="fixed top-0 left-0 w-[90px]  h-screen p-1
+      flex flex-col  text-secondary shadow-lg "
       >
         <div className="my-2">
           <SidebarIcon icon={<HomeIcon size={30} />} />

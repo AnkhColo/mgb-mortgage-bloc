@@ -11,7 +11,8 @@ import { ReactComponent as ReturnIcon } from "../icons/header-return.svg";
 // import { ReactComponent as TickIcon } from "../icons/tick.svg";
 // import { ReactComponent as ComingSoonIcon } from "../icons/coming-soon.svg";
 
-import Overview from "../employeesComponents/Overview";
+// import Overview from "../employeesComponents/Overview";
+import OverviewTest from "../employeesComponents/OverviewTest";
 import Charts from "../employeesComponents/Charts";
 import CreditData from "../employeesComponents/CreditData";
 import Transactions from "../employeesComponents/Transactions";
@@ -26,7 +27,7 @@ export default function EmployeesMenu() {
   const renderContent = () => {
     switch (activeSection) {
       case "overview":
-        return <Overview />;
+        return <OverviewTest />;
       case "charts":
         return <Charts />;
       case "creditData":
@@ -39,87 +40,78 @@ export default function EmployeesMenu() {
   };
 
   return (
-    <div
-      className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-custom-black 
-    rounded-xl m-3  flex justify-center items-center font-arial object-cover"
-    >
-      <div
-        className=" fixed top-[-1] bottom-1 left-14 right-1 h-[91%] w-[90%] bg-gray-950 rounded-xl 
-      m-3 px-3 py-5 flex justify-center items-center font-arial text-white"
-      >
-        {/* Section 1 - Header elements */}
-        <div className="flex justify-start items-center  absolute top-3  left-11 w-full ">
-          <button>
-            <ReturnIcon className="mx-3" />
-          </button>
-          <p className=" text-white text-4xl ">Vladmir Isadev</p>
-          {/* <InvatedIcon className="mx-3" /> */}
+    <div className=" fixed top-[40px] bottom-1 left-[96px] max-w-[1280px] w-full max-h-[720px] bg-custom-gray rounded-[14px] m-3  py-5 flex justify-center items-centerr">
+      {/* Section 1 - Header elements */}
+      <div className="absolute flex justify-between top-[32px] max-w-[95%] w-full h-[48px]  mx-auto">
+        <div className="flex items-center ">
+          <ReturnIcon className="mx-3" />
+          <p className=" text-[32px] text-white w-[240px] h-[95%] items-center">
+            Vladmir Isadev
+          </p>
         </div>
-        <button className=" flex items-center text-sm absolute top-3 right-4 bg-custom-red text-black rounded-md px-4 py-2">
+        <div className=" flex items-center text-sm  bg-custom-red text-black rounded-md px-4 py-2">
           <DownIcon className="mr-2" />
           <div>Download</div>
-        </button>
-
-        {/* Buttons for section switching */}
-        <div className="absolute flex my-12   top-3 left-0">
-          {/* Overview Button */}
-          <overview className="flex">
-            <button
-              className={` flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
-                activeSection === "overview" ? "custom-purple text-black" : ""
-              }`}
-              onClick={() => handleButtonClick("overview")}
-            >
-              {/* <OverviewIcon className="mr-4" /> */}
-              <div>Overview</div>
-            </button>
-          </overview>
-
-          {/* Charts Button */}
-          <charts className="flex ">
-            <button
-              className={`flex items-center px-8  py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
-                activeSection === "charts" ? "custom-purple text-black" : ""
-              }`}
-              onClick={() => handleButtonClick("charts")}
-            >
-              <div>{/* <ChartsIcon className="mr-4" /> */}</div>
-              <div>Charts</div>
-            </button>
-          </charts>
-
-          {/* Credit Data Button */}
-          <creditdata>
-            <button
-              className={`flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500 ${
-                activeSection === "creditData" ? "custom-purple text-black" : ""
-              }`}
-              onClick={() => handleButtonClick("creditData")}
-            >
-              {/* <CreditDataIcon className="mr-4" /> */}
-              <div>Credit Data</div>
-            </button>
-          </creditdata>
-
-          {/* Transactions Button */}
-          <transactions>
-            <button
-              className={`flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
-                activeSection === "transactions"
-                  ? "custom-purple text-black"
-                  : ""
-              }`}
-              onClick={() => handleButtonClick("transactions")}
-            >
-              {/* <TransactionsIcon className="mr-4" /> */}
-              <div>Transactions</div>
-            </button>
-          </transactions>
         </div>
-
-        {/* Render content based on active section */}
-        {renderContent()}
       </div>
+
+      {/* Buttons for section switching */}
+      <div className="absolute flex justify-start top-[100px] max-w-[95%] w-full h-[48px]  mx-auto">
+        {/* Overview Button */}
+        <overview className="flex">
+          <button
+            className={` flex items-center px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
+              activeSection === "overview" ? "custom-purple text-black" : ""
+            }`}
+            onClick={() => handleButtonClick("overview")}
+          >
+            {/* <OverviewIcon className="mr-4" /> */}
+            <div>Overview</div>
+          </button>
+        </overview>
+
+        {/* Charts Button */}
+        <charts className="flex ">
+          <button
+            className={`flex items-center px-8  py-2 rounded-md bg-slate-800 hover:bg-purple-500  ${
+              activeSection === "charts" ? "custom-purple text-black" : ""
+            }`}
+            onClick={() => handleButtonClick("charts")}
+          >
+            <div>{/* <ChartsIcon className="mr-4" /> */}</div>
+            <div>Charts</div>
+          </button>
+        </charts>
+
+        {/* Credit Data Button */}
+        <creditdata>
+          <button
+            className={`flex items-center px-8 mx-1 h-full rounded-md bg-slate-800 hover:bg-purple-500 ${
+              activeSection === "creditData" ? "custom-purple text-black" : ""
+            }`}
+            onClick={() => handleButtonClick("creditData")}
+          >
+            {/* <CreditDataIcon className="mr-4" /> */}
+            <div>Credit Data</div>
+          </button>
+        </creditdata>
+
+        {/* Transactions Button */}
+        <transactions>
+          <button
+            className={`flex items-center px-8 mx-1 h-full rounded-md bg-slate-800 hover:bg-purple-500  ${
+              activeSection === "transactions" ? "custom-purple text-black" : ""
+            }`}
+            onClick={() => handleButtonClick("transactions")}
+          >
+            {/* <TransactionsIcon className="mr-4" /> */}
+            <div>Transactions</div>
+          </button>
+        </transactions>
+      </div>
+
+      {/* Render content based on active section */}
+      {renderContent()}
     </div>
   );
 }

@@ -1,26 +1,20 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./Sidebar";
 import DashboardsMenu from "./pages/DashboardsMenu";
 import EmployeesMenu from "./pages/EmployeesMenu";
 import { AuthContextProvider } from "./AuthContext";
-// import Overview from "./employeesComponents/Overview";
-// import Charts from "./employeesComponents/Charts";
-// import CreditData from "./employeesComponents/CreditData";
-// import Transactions from "./employeesComponents/Transactions";
+import "@fontsource/poppins";
 
 function App() {
   return (
     <BrowserRouter>
       <AuthContextProvider>
-        <div
-          className="bg:[rgba(11, 12, 18, 1)];
-"
-        >
+        <div>
           <Sidebar />
           <Routes>
             <Route path="/" element={<DashboardsMenu />} />
-            <Route path="employees/*" element={<EmployeesMenu />} />
+            <Route path="employees" element={<EmployeesMenu />} />
           </Routes>
         </div>
       </AuthContextProvider>
