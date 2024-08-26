@@ -1,6 +1,6 @@
 import React from "react";
 
-const signUp = () => {
+const SignUp = () => {
   return (
     //Logic comes here...Email retrival with  Firebase Logic;
     // AuthContext used here as well, so firebase must be
@@ -8,10 +8,11 @@ const signUp = () => {
 
     //Flow: Captures Email & Password with input fields for each.
     //--> Routes to Homepage with per Account page rendering...Yeah thazz it.
-    <div>
-      <div>Sign Up Page</div>
+
+    <div className=" text-white fixed top-[40px] h-full left-[96px] max-w-[71rem] w-full max-h-[630px] bg-custom-gray rounded-[14px] m-3  py-5 flex justify-center items-center">
+      Sign Up Page
     </div>
   );
 };
 
-export default signUp;
+export default SignUp;

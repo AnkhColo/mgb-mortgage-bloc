@@ -40,23 +40,23 @@ export default function EmployeesMenu() {
   };
 
   return (
-    <div className=" fixed top-[40px] bottom-1 left-[96px] max-w-[1280px] w-full max-h-[720px] bg-custom-gray rounded-[14px] m-3  py-5 flex justify-center items-centerr">
+    <div className=" fixed top-[40px]  left-[96px] bottom-1 max-w-[71rem] w-full max-h-[650px] h-full bg-custom-gray rounded-[14px] m-3  py-5 flex justify-center items-center">
       {/* Section 1 - Header elements */}
-      <div className="absolute flex justify-between top-[32px] max-w-[95%] w-full h-[48px]  mx-auto">
+      <div className="absolute flex justify-between top-[20px] max-w-[95%] w-full h-[40px]  mx-auto">
         <div className="flex items-center ">
           <ReturnIcon className="mx-3" />
           <p className=" text-[32px] text-white w-[240px] h-[95%] items-center">
             Vladmir Isadev
           </p>
         </div>
-        <div className=" flex items-center text-sm  bg-custom-red text-black rounded-md px-4 py-2">
+        <div className=" flex items-center text-xs bg-custom-red text-black rounded-md px-4 py-2">
           <DownIcon className="mr-2" />
           <div>Download</div>
         </div>
       </div>
 
       {/* Buttons for section switching */}
-      <div className="absolute flex justify-start top-[100px] max-w-[95%] w-full h-[48px]  mx-auto">
+      <div className="absolute flex text-xs justify-start top-[100px] max-w-[95%] w-full h-[32px]  mx-auto text-white">
         {/* Overview Button */}
         <overview className="flex">
           <button
@@ -86,7 +86,7 @@ export default function EmployeesMenu() {
         {/* Credit Data Button */}
         <creditdata>
           <button
-            className={`flex items-center px-8 mx-1 h-full rounded-md bg-slate-800 hover:bg-purple-500 ${
+            className={`flex items-center px-8 ml-1 h-full rounded-md bg-slate-800 hover:bg-purple-500 ${
               activeSection === "creditData" ? "custom-purple text-black" : ""
             }`}
             onClick={() => handleButtonClick("creditData")}

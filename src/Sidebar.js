@@ -10,7 +10,7 @@ import { ReactComponent as DownIcon } from "./icons/chevron-down.svg";
 const Sidebar = () => {
   return (
     <div>
-      <div className="fixed max-w-[96px]  w-full flex  top-3 right-32 text-gray-500 text-sm">
+      <div className="absolute max-w-[90px]  w-full flex  top-4 right-[160px] text-gray-500 text-xs">
         <div className="mr-[8px]">muriithicolin98@gmail.com...</div>
         <div>
           <DownIcon />
@@ -21,7 +21,9 @@ const Sidebar = () => {
       flex flex-col  text-secondary shadow-lg "
       >
         <div className="my-2">
-          <SidebarIcon icon={<HomeIcon size={30} />} />
+          <Link to="/">
+            <SidebarIcon icon={<HomeIcon size={30} />} />
+          </Link>
         </div>
         <div className="my-6">
           <div className="my-2">
@@ -35,9 +37,11 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="fixed bottom-3 left-0 mx-auto px-4 my-2 text-gray-600 font-arial text-xs ">
-        <SidebarIcon
-          icon={<LogoutIcon className="my-2" size={22} text={"Logout"} />}
-        />
+        <Link to="/login">
+          <SidebarIcon
+            icon={<LogoutIcon className="my-2" size={22} text={"Logout"} />}
+          />
+        </Link>
         <p className="">Log Out</p>
       </div>
     </div>

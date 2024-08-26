@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import DashboardsMenu from "./pages/DashboardsMenu";
 import EmployeesMenu from "./pages/EmployeesMenu";
 import { AuthContextProvider } from "./AuthContext";
-import "@fontsource/poppins";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<DashboardsMenu />} />
             <Route path="employees" element={<EmployeesMenu />} />
+            <Route path="login" element={<SignUp />} />
           </Routes>
         </div>
       </AuthContextProvider>

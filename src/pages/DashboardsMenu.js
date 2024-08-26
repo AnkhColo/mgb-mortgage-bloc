@@ -28,21 +28,23 @@ const DashboardsMenu = () => {
   };
 
   return (
-    <div className="fixed top-[40px] bottom-1 left-[96px] max-w-[1150px] w-full max-h-[680px] bg-custom-gray rounded-[14px] m-3  mt-6 pb-5 flex justify-center items-center ">
-      <div className="absolute flex justify-between top-[32px] max-w-[95%] w-full h-[48px]  mx-auto ">
+    <div className=" fixed top-[40px] bottom-1 left-[96px] max-w-[71rem] w-full max-h-[650px] h-full  bg-custom-gray rounded-[14px] m-3  py-5 flex justify-center items-center ">
+      <div className="absolute flex justify-between top-[20px] max-w-[95%] w-full h-[40px]  left-[20px] ">
         <p className="text-[34px] text-white w-[240px]  items-center ">
           Lender Admin
         </p>
-        <div className="w-[193px] flex bg-custom-red rounded-md justify-center items-center">
-          <div className="absolute flex justify-center items-center">
+        <div className="w-[165px] flex bg-custom-red rounded-md justify-center items-center">
+          <div className="absolute flex justify-center items-center text-xs text-custom-purple font-medium">
             <PlusIcon className="mr-2" />
             <div>Invite Employee</div>
           </div>
         </div>
       </div>
-      <div className="absolute flex justify-start top-[100px] max-w-[95%] w-full h-[48px]  mx-auto ">
+
+      {/* Buttons container  */}
+      <div className="absolute flex justify-start top-[100px] max-w-[95%] w-full h-[32px]  left-[20px] ">
         <button
-          className={`px-10 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-300  ${
+          className={`px-8 mx-1 py-0.5 rounded-md bg-slate-800 hover:bg-purple-300  ${
             activeSection === "dashboard" ? "custom-purple" : ""
           }`}
           onClick={() => handleButtonClick("dashboard")}
@@ -52,7 +54,7 @@ const DashboardsMenu = () => {
               <DashIcon size={2} />
             </div>
             <div
-              className={`px-1 ${
+              className={`px-1 text-xs ${
                 activeSection === "dashboard" ? "text-black" : "text-white"
               } `}
             >
@@ -61,7 +63,7 @@ const DashboardsMenu = () => {
           </div>
         </button>
         <button
-          className={`px-10 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-300  ${
+          className={`px-8 mx-1 py-2 rounded-md bg-slate-800 hover:bg-purple-300  ${
             activeSection === "employee" ? "custom-purple" : ""
           }`}
           onClick={() => handleButtonClick("employee")}
@@ -71,7 +73,7 @@ const DashboardsMenu = () => {
               <PersonIcon />
             </div>
             <div
-              className={`px-1  ${
+              className={`px-1 text-xs ${
                 activeSection === "employee" ? "text-black" : "text-white"
               } `}
             >
@@ -80,12 +82,12 @@ const DashboardsMenu = () => {
           </div>
         </button>
         {activeSection === "employee" ? (
-          <div className="absolute top-0 right-0 flex  mx-0 p-2 text-sm text-white">
-            <div className="px-4 mx-1 py-2 text-sm flex justify-center items-center rounded-md bg-slate-800">
+          <div className="absolute top-0 right-0 flex  mx-0 h-full  text-xs text-white">
+            <div className="px-4  py-2 mx-2 flex justify-center items-center rounded-md bg-slate-800">
               <div className="px-1">{/* <TrashIcon /> */}</div>
               <div>Reset User Password</div>
             </div>
-            <div className="px-8 mx-1 py-2 rounded-md bg-slate-800 text-gray-500 text-md flex justify-between items-start">
+            <div className="px-8  py-2 rounded-md bg-slate-800 text-gray-500 text-md flex justify-between items-start">
               <input placeholder="Search" className="bg-transparent" />
               {/* <SearchIcon className="mt-1 " /> */}
             </div>
