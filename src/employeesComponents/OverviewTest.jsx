@@ -19,45 +19,29 @@ const OverviewTest = () => {
             </div>
           </div>
         </div>
-        <div className="bg-slate-400 w-full max-h-[35%] h-full text-xs rounded-sm grid grid-flow-col lg:grid-col-2 ">
+        <div className="  w-full max-h-[35%] h-full text-xs rounded-sm grid grid-flow-col lg:grid-col-2 gap-2 ">
           {/* bottom-stuff */}
+          <div className="text-white ˜">
+            <div className="h-4 mb-2">DONE</div>
+            <div className="grid gap-2 h-[80%]">
+              <div className="w-full   rounded-lg  ">
+                <div>Bank Account Name Match</div>
+              </div>
+              <div>Data</div>
+              <div>Data</div>
+            </div>
+          </div>
+
+          <div className="text-white  ">
+            <div className="h-4 mb-2">PROGRESS</div>
+            <div className="grid gap-2 h-[80%]">
+              <div>Data</div>
+              <div>Data</div>
+              <div>Data</div>
+            </div>
+          </div>
 
           {/* bottom-stuff-left */}
-          <div>
-            DONE
-            <div className="flex  border-1 border border-custom-purple rounded-lg bg-transparent px-6 py-1 mx-4  my-4 ">
-              <div className="mx-1">{/* <CheckIcon /> */}</div>
-              <div>Bank Account Name Match</div>
-            </div>
-            <div className="flex mx-2 border-1 border border-custom-purple rounded-lg bg-transparent px-2 py-1  my-4 ">
-              <div className="mx-1">{/* <CheckIcon /> */}</div>
-              <div>Bank Account Connected</div>
-            </div>
-            <div className="flex  ml-2 border-1 border border-custom-purple rounded-lg bg-transparent px-2 py-1  my-4 ">
-              <div className="mx-1">{/* <CheckIcon /> */}</div>
-              <div>Data Categorised</div>
-            </div>
-          </div>
-
-          {/* bottom-stuff-right */}
-          <div className=" relative flex flex-col justify-around">
-            <div className="absolute top-2 left-2">IN PROGRESS</div>
-
-            <div className="mr-[40px] ml-2 border-1 border-gray-600 rounded-lg bg-custom-red overflow-visible px-2 py-2  my-1 ">
-              Document Verification
-            </div>
-            <div className="flex justify-between">
-              <div className="ml-2 border-1 border-gray-600 rounded-lg bg-custom-red px-5 py-2 my-1 ">
-                KYC Check
-              </div>
-              <div className="mr-2 border-1 border-gray-600 rounded-lg bg-custom-red px-5 py-2 my-1 ">
-                AML Check
-              </div>
-            </div>
-            <div className="ml-2 mr-[120px] mb-4 border-1 items-center border-gray-600 rounded-lg bg-custom-red px-4 py-2 my-1 ">
-              Selfie Check
-            </div>
-          </div>
         </div>
       </div>
 

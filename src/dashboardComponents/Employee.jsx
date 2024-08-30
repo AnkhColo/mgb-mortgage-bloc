@@ -11,7 +11,7 @@ const Employee = () => {
   return (
     <div className="absolute text-white max-w-[1280px]  max-h-[480px] h-full top-[154px] left-[20px] overflow-scroll  w-[95%] rounded-md">
       <table className="w-full bg-slate-800 text-sm">
-        <thead className="border-b border-black bg-gray-900">
+        <thead className="border-b border-black bg-gray-900 sticky top-0 text-xs">
           <tr>
             <th className="px-4 py-2 text-left font-light text-slate-400">
               First Name
@@ -37,7 +37,7 @@ const Employee = () => {
           </tr>
         </thead>
 
-        <tbody className="overflow-y-scroll scroll-smooth">
+        <tbody className="">
           <EmployeeInfo
             firstName={firstName}
             lastName={lastName}

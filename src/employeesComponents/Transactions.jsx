@@ -11,8 +11,8 @@ const Transactions = () => {
   return (
     <div className="absolute max-w-[1280px]  max-h-[480px] h-full top-[154px] mx-auto w-[95%] rounded-md overflow-y-scroll scroll-smooth ">
       <table className="w-full bg-slate-800  ">
-        <thead>
-          <tr className="text-black bg-slate-700 font-medium">
+        <thead className="sticky top-0">
+          <tr className="text-gray-400 text-sm font-light bg-slate-700 ">
             <th className="px-4 py-2 text-left">Name</th>
             <th className="px-4 py-2 text-left">Date</th>
             <th className="px-4 py-2 text-left">Reccuring</th>
@@ -20,6 +20,7 @@ const Transactions = () => {
             <th className="px-4 py-2 text-left">Account</th>
             <th className="px-4 py-2 text-left">Amount</th>
             <th className="px-4 py-2 text-left">Category</th>
+            <th className="px-4 py-2 text-left">...</th>
           </tr>
         </thead>
 
@@ -141,14 +142,15 @@ const TransactionsInfo = ({
   category,
 }) => {
   return (
-    <tr className="bg-slate-800 text-gray-400 h-[60px] rounded border-b border-b-black">
+    <tr className="bg-slate-800 text-white text-sm h-[60px] rounded border-b border-b-black">
       <td className="px-4 py-2">{name}</td>
       <td className="px-4 py-2">{date}</td>
-      <td className="px-4 py-2">{reccuring}</td>
-      <td className="px-4 py-2">{type}</td>
+      <td className="px-4 py-2 text-gray-400">{reccuring}</td>
+      <td className="px-4 py-2 text-gray-400">{type}</td>
       <td className="px-4 py-2">{account}</td>
       <td className="px-4 py-2">{amount}</td>
       <td className="px-4 py-2">{category}</td>
+      <td className="px-4 py-2">...</td>
     </tr>
   );
 };
