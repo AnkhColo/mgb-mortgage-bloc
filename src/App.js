@@ -5,17 +5,36 @@ import DashboardsMenu from "./pages/DashboardsMenu";
 import EmployeesMenu from "./pages/EmployeesMenu";
 import { AuthContextProvider } from "./AuthContext";
 import SignUp from "./pages/SignUp";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <BrowserRouter>
       <AuthContextProvider>
         <div>
-          <Sidebar />
+          <LandingPage />
+
           <Routes>
-            <Route path="/" element={<DashboardsMenu />} />
-            <Route path="employees" element={<EmployeesMenu />} />
+            <Route path="landing" element={<LandingPage />} />
             <Route path="login" element={<SignUp />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Sidebar />
+                  <DashboardsMenu />
+                </>
+              }
+            />
+            <Route
+              path="employees"
+              element={
+                <>
+                  <Sidebar />
+                  <EmployeesMenu />
+                </>
+              }
+            />
           </Routes>
         </div>
       </AuthContextProvider>
