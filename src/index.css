@@ -2,22 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
-  .sidebar-icon{
+  .sidebar-icon {
     @apply relative flex justify-center items-center w-[48px]
     h-[40px] mx-auto  shadow-lg bg-black p-2
     text-gray-500 hover:bg-gray-300 hover:text-black
-    rounded-md transition-all duration-300 ease-linear
+    rounded-md transition-all duration-300 ease-linear;
   }
 }
 
 body {
-  
   background-color: rgba(9, 8, 8, 0.978);
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal
+  font-style: normal;
 }
 
 .custom-purple {
@@ -25,11 +23,13 @@ body {
 }
 
 .custom-gray {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .custom-black {
   background-color: rgba(11, 12, 18, 1);
-  ;
 }
 
+.landing-font {
+  font-family: "Satoshi", sans-serif;
+}

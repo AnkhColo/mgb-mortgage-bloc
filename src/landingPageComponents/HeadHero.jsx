@@ -3,17 +3,19 @@ import { Link } from "react-router-dom";
 
 const HeadHero = () => {
   return (
-    <div className="text-white">
-      <div className="h-screen w-full bg-gradient-to-b from-custom-purple mx-auto text-center text-white flex flex-col justify-center items-center   ">
-        <div className="max-w-[800px]">
-          <p className=" text-5xl md:text-7xl my-2">Banking Data Automated</p>
-          <div>
+    <div className="text-white h-[90vh] w-[100%] bg-gradient-to-b from-custom-purple to-black flex justify-center ">
+      <div className=" absolute h-[55%] w-[90%] top-40 mx-auto text-center text-white flex flex-col  items-center   ">
+        <div className="max-w-[100%] h-[100%] md:w-[700px] flex  flex-col justify-between items-center ">
+          <p className="text-6xl md:text-7xl font-medium ">
+            Banking Data Automated
+          </p>
+          <p className="text-2xl">
             MortgageBloc provides you with secure automated access to your
             customers banking data using Open Banking APIs
-          </div>
-          <div>
+          </p>
+          <div className="w-[200px] bottom-0">
             <Link to="/">
-              <div className="bg-[#fbff36] rounded-md text-black px-6  my-3 w-[200px] mx-auto  py-2  font-bold hover:bg-gray-600">
+              <div className="bg-[#fbff36] rounded-md text-black px-6  w-[200px] mx-auto  py-3 mb-5  font-bold hover:bg-gray-600">
                 Schedule Demo
               </div>
             </Link>

@@ -1,6 +1,5 @@
 .App {
   text-align: center;
- 
 }
 
 .App-header {
@@ -37,4 +36,6 @@
   }
 }
 
-
+.landing-font {
+  font-family: "Satoshi", sans-serif;
+}

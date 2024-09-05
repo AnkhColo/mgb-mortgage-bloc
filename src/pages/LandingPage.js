@@ -5,8 +5,9 @@ import HeadHero from "../landingPageComponents/HeadHero";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="landing-font">
       <NavBar />
+      <HeadHero />
       <HeadHero />
     </div>
   );

@@ -13,8 +13,7 @@ function App() {
       <AuthContextProvider>
         <div>
           <LandingPage />
-
-          <Routes>
+          {/* <Routes>
             <Route path="landing" element={<LandingPage />} />
             <Route path="login" element={<SignUp />} />
             <Route
@@ -35,7 +34,7 @@ function App() {
                 </>
               }
             />
-          </Routes>
+          </Routes> */}
         </div>
       </AuthContextProvider>
     </BrowserRouter>
