@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeadHero = () => {
   return (
-    <div className="text-white h-[90vh] w-[100%] bg-gradient-to-b from-custom-purple to-black flex justify-center ">
+    <div className="text-white h-[89vh] w-[100%] bg-gradient-to-b from-custom-purple to-black flex justify-center ">
       <div className=" absolute h-[55%] w-[90%] top-40 mx-auto text-center text-white flex flex-col  items-center   ">
         <div className="max-w-[100%] h-[100%] md:w-[700px] flex  flex-col justify-between items-center ">
           <p className="text-6xl md:text-7xl font-medium ">
