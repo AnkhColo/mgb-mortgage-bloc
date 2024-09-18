@@ -15,7 +15,7 @@ const NavBar = () => {
 
   return (
     <div className=" fixed flex justify-center  h-[15%] w-[100%] text-white items-center z-[100]">
-      <div className=" absolute flex justify-between  mx-auto h-[66px] bg-slate-900 bg-opacity-90 backdrop-blur-sm max-w-[95%] w-[90%] items-center ">
+      <div className=" absolute flex justify-between  mx-auto h-[66px] bg-slate-900 bg-opacity-80 backdrop-blur-sm max-w-[95%] w-[90%] items-center ">
         <div className="flex justify-between p-3 w-full">
           <div className="flex justify-between w-[178px] items-center ml-4">
             <HomeIcon className="h-4" />

@@ -5,6 +5,7 @@ import HeadHero from "../landingPageComponents/HeadHero";
 import AppImages from "../landingPageComponents/AppImages";
 import VideoWindow from "../landingPageComponents/VideoWindow";
 import TailHero from "../landingPageComponents/TailHero";
+import Footer from "../landingPageComponents/Footer";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <AppImages />
       <VideoWindow />
       <TailHero />
+      <Footer />
     </div>
   );
 };

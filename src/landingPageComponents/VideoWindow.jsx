@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoWindow = () => {
   return (
-    <div className="h-screen bg-red-400 flex justify-center ">
+    <div className="h-screen bg-custom-gray flex justify-center ">
       <div className="max-w-[90%] max-h-[85%] bg-gray-600 w-[90%] h-[85%] flex justify-center">
         <div className="w-full h-full">
           {/* Embedding YouTube video without fullscreen option */}
